@@ -2,7 +2,6 @@ package hu.progmasters.dinopark.repository;
 
 import hu.progmasters.dinopark.domain.DinoType;
 import hu.progmasters.dinopark.domain.Dinosaur;
-import org.springframework.stereotype.Repository;
 
 import java.util.Comparator;
 import java.util.HashMap;
@@ -10,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-@Repository
+//@Repository
 public class DinoRepositoryInMemory implements DinoRepository {
     private final Map<Integer, Dinosaur> dinosaurs = new HashMap<>();
     private int lastIndexUsed = 0;

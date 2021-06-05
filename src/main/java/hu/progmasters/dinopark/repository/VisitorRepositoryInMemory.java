@@ -1,7 +1,6 @@
 package hu.progmasters.dinopark.repository;
 
 import hu.progmasters.dinopark.domain.Visitor;
-import org.springframework.stereotype.Repository;
 
 import java.util.Comparator;
 import java.util.HashMap;
@@ -9,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-@Repository
+//@Repository
 public class VisitorRepositoryInMemory implements VisitorRepository {
 
     private final Map<Integer, Visitor> visitors = new HashMap<>();
